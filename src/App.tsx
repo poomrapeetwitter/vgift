@@ -1,11 +1,17 @@
 import './App.css'
+import 'animate.css';
+
 import Content from './components/Content/Content'
+import HeartRain from './components/HeartRain/HeartRain'
 
 function App() {
   
   return (
     <>
-      <Content />
+      <div>
+        <HeartRain />
+        <Content />
+      </div>
     </>
   )
 }
