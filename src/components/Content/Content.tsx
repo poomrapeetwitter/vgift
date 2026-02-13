@@ -4,8 +4,6 @@ import OpenedValentineBox from '@/assets/items/opened-valentine-box.png'
 import OpenedBouquetRoses from '@/assets/items/opened-bouquet-roses.png'
 import ValentineLetter from '@/assets/items/valentine-letter.png'
 import OpenedValentineLetter from '@/assets/items/opened-valentine-letter-3.png'
-import LeftGiftPile from '@/assets/items/gift-pile-1.png'
-import RightGiftPile from '@/assets/items/gift-pile-2.png'
 import RightArrow from '@/assets/items/right-arrow.png'
 import BackArrow from '@/assets/items/back-arrow.png'
 
@@ -91,10 +89,6 @@ function Content() {
             </div>
           </div>
         </div>
-        {/* <div className='footer'>
-          <img className='animate__animated animate__fadeIn footer__gift-pile--left' src={LeftGiftPile} />
-          <img className='animate__animated animate__fadeIn footer__gift-pile--right' src={RightGiftPile} />
-        </div> */}
       </div>
     </>
   )
