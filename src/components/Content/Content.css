@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 
     width: 768px;
     height: 100vh;
@@ -51,6 +50,7 @@
 
 .button-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;

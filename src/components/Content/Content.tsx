@@ -91,10 +91,10 @@ function Content() {
             </div>
           </div>
         </div>
-        <div className='footer'>
+        {/* <div className='footer'>
           <img className='animate__animated animate__fadeIn footer__gift-pile--left' src={LeftGiftPile} />
           <img className='animate__animated animate__fadeIn footer__gift-pile--right' src={RightGiftPile} />
-        </div>
+        </div> */}
       </div>
     </>
   )
