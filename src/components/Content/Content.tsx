@@ -7,6 +7,8 @@ import OpenedValentineLetter from '@/assets/items/opened-valentine-letter-3.png'
 import LeftGiftPile from '@/assets/items/gift-pile-1.png'
 import RightGiftPile from '@/assets/items/gift-pile-2.png'
 import RightArrow from '@/assets/items/right-arrow.png'
+import BackArrow from '@/assets/items/back-arrow.png'
+
 import { useState } from 'react'
 
 function Content() {
@@ -39,7 +41,7 @@ function Content() {
     { img: OpenedValentineLetter, 
       header: 'Happy Valentine\'s Day!', 
       description: 'สุขสันต์วันวาเลนไทน์นะ! ถึงแม้ว่าเราจะพึ่งรู้จักกันไม่นาน แต่ความสดใสกับความน่ารักของเธอทำให้เราอยากรู้จักเธอให้มากกว่านี้ หวังว่าเธอจะชอบของขวัญชิ้นนี้นะ :)', 
-      next: 'กลับไปที่กล่องของขวัญ'
+      next: 'กลับไปหน้าแรก'
     },
   ]
 
@@ -68,7 +70,10 @@ function Content() {
               />
             </div>
           </div>
-          <div className='content__body-description'>
+          <div 
+            key={currentGiftState} 
+            className='content__body-description animate__animated animate__fadeIn'
+          >
             <div>
               <div className='content__body-description--header'>
                 {GiftState[currentGiftState].header}
@@ -79,7 +84,10 @@ function Content() {
             </div>
             <div className='button-wrapper' onClick={handleClick}>
               <div>{GiftState[currentGiftState].next}</div>
-              <img src={RightArrow} className="content__body-description--icon" />
+              <img 
+                src={currentGiftState < GiftState.length - 1 ? RightArrow : BackArrow} 
+                className="content__body-description--icon"
+              />
             </div>
           </div>
         </div>
