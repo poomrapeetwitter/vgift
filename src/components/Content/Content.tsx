@@ -1,9 +1,4 @@
 import './Content.css'
-import ValentineBox from '@/assets/items/valentine-box.png'
-import OpenedValentineBox from '@/assets/items/opened-valentine-box.png'
-import OpenedBouquetRoses from '@/assets/items/opened-bouquet-roses.png'
-import ValentineLetter from '@/assets/items/valentine-letter.png'
-import OpenedValentineLetter from '@/assets/items/opened-valentine-letter-3.png'
 import RightArrow from '@/assets/items/right-arrow.png'
 import BackArrow from '@/assets/items/back-arrow.png'
 
@@ -16,27 +11,27 @@ function Content() {
 
   const GiftState = [
     { 
-      img: ValentineBox, 
+      img: '/items/valentine-box.png', 
       header: 'A Valentine\'s box?', 
       description: 'ทาดาาา~ นี่คือของขวัญวันวาเลนไทน์ที่เราจะให้เธอในวันนี้นะ! อยากรู้ไหมว่าข้างในมีอะไร เธอลองเปิดดูสิ!',
       next: 'แกะกล่องของขวัญ'
     },
-    { img: OpenedValentineBox, 
+    { img: '/items/opened-valentine-box.png', 
       header: 'Is it a bouquet of roses?', 
       description: 'เหมือนจะเป็นช่อดอกกุหลาบนะ! แต่ไม่แน่ใจว่ามีอะไรอีกหรือเปล่า เธอลองนำช่อดอกไม้ออกมาดูสิ!',
       next: 'นำช่อดอกไม้ออกมา'
     },
-    { img: OpenedBouquetRoses, 
+    { img: '/items/opened-bouquet-roses.png', 
       header: 'Surprise! this is for you!', 
       description: 'เซอร์ไพร์ส! ช่อดอกกุหลาบนี้เป็นของขวัญที่เราอยากให้เธอในวันพิเศษนี้ หวังว่าเธอจะชอบนะ! แต่เดี๋ยวก่อน ยังมีอะไรอีกอย่างหนึ่งที่เราอยากให้เธอ ลองดูสิ!', 
       next: 'หยิบจดหมายด้านใน'
     },
-    { img: ValentineLetter, 
+    { img: '/items/valentine-letter.png', 
       header: 'A Valentine\'s letter', 
       description: 'เราเขียนจดหมายฉบับนี้ขึ้นมาเพื่ออยากจะบอกอะไรบางอย่างกับเธอหน่ะ ได้โปรดอ่านมันนะ!', 
       next: 'อ่านจดหมาย'
     },
-    { img: OpenedValentineLetter, 
+    { img: '/items/opened-valentine-letter-3.png', 
       header: 'Happy Valentine\'s Day!', 
       description: 'สุขสันต์วันวาเลนไทน์นะ! ถึงแม้ว่าเราจะพึ่งรู้จักกันไม่นาน แต่ความสดใสกับความน่ารักของเธอทำให้เราอยากรู้จักเธอให้มากกว่านี้ หวังว่าเธอจะชอบของขวัญชิ้นนี้นะ :)', 
       next: 'กลับไปหน้าแรก'
